@@ -1,0 +1,12 @@
+version: "3"
+services:
+  web:
+    container_name: "fm_integration"
+    build: .
+    restart: unless-stopped
+    environment:
+      - "NODE_ENV=development"
+    env_file:
+      - .env
+    ports:
+      - "${HOST_PORT:-8088}:3000"
