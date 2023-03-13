@@ -110,4 +110,7 @@ db/sapassword.env
 # DB Data
 db/data
 
+# Mac files
+.DS_Store
+
 
